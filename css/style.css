@@ -253,6 +253,8 @@ a.expanded {
 }
 .history {
     padding: 16px 0;
+    display: flex;
+    flex-direction: column-reverse;
 }
 .message {
     margin: 0 -10px;
