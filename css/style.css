@@ -42,6 +42,7 @@ pre {
 }
 .pull_right {
     float: right;
+    display: none;
 }
 .page_wrap {
     background-color: #ffffff;
@@ -587,6 +588,7 @@ div.toast_shown {
 
 .reactions {
     margin: 5px 0;
+    display: none;
 }
 
 .reactions .reaction {
