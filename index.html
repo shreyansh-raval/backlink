@@ -12,7 +12,22 @@
   <script src="js/script.js" type="text/javascript">
 
   </script>
+  <script>
+        function cleanUrl(event) {
+            // Prevent the default action of the anchor link
+            event.preventDefault();
 
+            // Get the URL of the link
+            var url = event.target.href;
+
+            // Remove the base URL (https://shreyansh-raval.github.io/backlink/)
+            var baseUrl = "https://shreyansh-raval.github.io/backlink/";
+            var cleanedUrl = url.replace(baseUrl, "");
+
+            // Redirect to the cleaned URL
+            window.location.href = cleanedUrl;
+        }
+    </script>
  </head>
 
  <body onload="CheckLocation();">
@@ -55600,19 +55615,4 @@ Luffy
  </body>
 
 </html>
-  <script>
-        function cleanUrl(event) {
-            // Prevent the default action of the anchor link
-            event.preventDefault();
 
-            // Get the URL of the link
-            var url = event.target.href;
-
-            // Remove the base URL (https://shreyansh-raval.github.io/backlink/)
-            var baseUrl = "https://shreyansh-raval.github.io/backlink/";
-            var cleanedUrl = url.replace(baseUrl, "");
-
-            // Redirect to the cleaned URL
-            window.location.href = cleanedUrl;
-        }
-    </script>
